@@ -1,0 +1,7 @@
+.right-section{
+	padding:5px;
+	box-shadow: 1px 1px 1px #bbbbbb;
+	background: #dddddd;
+	overflow:hidden;
+	grid-column:7/9;
+}
