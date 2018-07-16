@@ -1,7 +1,6 @@
 .home-grid-container{
 	display:grid;
 	grid-gap:10px;
-
 	grid-template-columns: repeat(8, 1fr);	
 }
 
@@ -12,8 +11,9 @@
 .mid-content-section{
 	padding:10px;
 	background: #dddddd;
-	box-shadow: 1px 1px #bbbbbb;
+	box-shadow: 2px 1px 2px #dddddd;
 	border-radius : 2px;
 	word-wrap: break-word;
 	grid-column:3/7;
+	background: #f1f1f1
 }

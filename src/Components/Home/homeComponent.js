@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './../Header/Header.js';
 import Footer from './../Footer/Footer.js'
 import LeftSection from './../LeftSection/leftSectionComponent.js';
-import MidContentSection from './../MidContentSection/midContentSectionComponent.js';
+import MidContentHomeSection from './../MidContentSection/midContentHomeSectionComponent.js';
 import RightSection from './../RightSection/rightSectionComponent.js';
 import PrivateBlog from './../PrivateBlog/privateBlogComponent.js';
 
@@ -28,7 +28,7 @@ class Home extends Component{
 
 						<React.Fragment>
 							<LeftSection dropDownListItems = {dropDownListItems}/>
-							<Route path = '/home' component = { MidContentSection } />	
+							<Route path = '/home' component = { MidContentHomeSection } />	
 							<Route path = '/privateblogs' component = { PrivateBlog } />
 						</React.Fragment>
 					</Router>	
