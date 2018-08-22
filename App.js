@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import ReactiveComp  from './Components/Reactive/reactive.js'
+import { CategorySearch }  from '@appbaseio/reactivesearch';
+import { ReactiveBase, SingleRange, ResultCard }  from '@appbaseio/reactivesearch';
 // import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 import './App.css';
@@ -21,13 +24,13 @@ class App extends Component {
   }
   render() {
     return (
-    <div className = "main-container">
-      <div className="grid-container">
-        <Header navArr = {this.HeaderNavArr} />
-        <Content />
-        <Footer />
-      </div>
-    </div>
+          <div className = "main-container">
+            <div className="grid-container">
+              <Header navArr = {this.HeaderNavArr} />
+              <Content {...this.props}/>
+              <Footer />
+            </div>
+          </div>
     );
   }
 }
